@@ -1,0 +1,43 @@
+.about {
+    margin: 140px auto 140px auto;
+    min-height: 515px;
+    position: relative;
+    &__header {
+        font-size: 25px;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 40px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 119px;
+            width: 70%;
+            height: 1px;
+            background-color: #000;
+        }
+    }
+    &__descr {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        &_list {
+            padding-left: 20px;
+            list-style-type: none;
+            li {
+                position: relative;
+                &::before {
+                    content: ".";
+                    position: absolute;
+                    left: -10px;
+                    top: -5px;
+                    font-weight: 500;
+                }
+            }
+        }
+        a {
+            color: #000;
+        }
+    }
+}

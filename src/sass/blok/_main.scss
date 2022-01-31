@@ -1,0 +1,143 @@
+.burger {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.photo {
+    position: fixed;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    background-color: #8ea69b;
+    display: flex;
+    &__wrapper {
+        position: absolute;
+        left: 50%;
+        top: 43%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+    }
+    &__img {
+        width: 100%;
+    }
+}
+
+.main {
+    padding-top: 30px;
+    min-height: 915px;
+    position: relative;
+    &__nav {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    &__biograph {
+        font-size: 17px;
+        font-weight: 300;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        list-style-type: none;
+        font-size: 17px;
+        font-weight: 300;
+        &:nth-child(2) {
+            margin: 0 15px 0 15px;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    &__name {
+        margin-top: 150px;
+        font-size: 50px;
+        font-weight: 500;
+        font-family: "Cormorant Garamond", serif;
+    }
+    &__post {
+        font-size: 25px;
+        font-weight: 300;
+    }
+    &__phone {
+        margin-top: 140px;
+        span {
+            margin-right: 7px;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 300;
+        }
+    }
+    &__email {
+        margin-top: 15px;
+        span {
+            margin-right: 7px;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 300;
+        }
+    }
+    &__adress {
+        margin-top: 15px;
+        color: #000;
+        font-weight: 300;
+        font-style: normal;
+        span {
+            margin-right: 7px;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+        }
+    }
+    &__social {
+        margin-top: 15px;
+        display: flex;
+    }
+    &__social-item {
+        list-style-type: none;
+        margin-right: 11px;
+        &:last-child {
+            position: relative;
+            &::before {
+                content: ".";
+                position: relative;
+                left: -5px;
+                top: -2px;
+                font-weight: 700;
+            }
+        }
+        a {
+            color: #000;
+            text-decoration: underline;
+            font-weight: 300;
+        }
+    }
+
+    &__full {
+        margin-top: 140px;
+        font-weight: 300;
+        display: inline-block;
+        position: relative;
+    }
+    &__arrow {
+        position: absolute;
+        width: 26px;
+        top: -6px;
+        right: -15%;
+    }
+}

@@ -1,0 +1,29 @@
+.add-education {
+    margin: 140px auto 0px auto;
+    min-height: 515px;
+    &__header {
+        font-size: 25px;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 40px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 247px;
+            width: 40%;
+            height: 1px;
+            background-color: #000;
+        }
+    }
+    &__descr {
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        a {
+            text-decoration: underline;
+            color: #000;
+        }
+    }
+}

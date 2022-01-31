@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.container {
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 10% 0 10%;
+    overflow: hidden;
+}
+
+@import "blok/main";
+@import "blok/about";
+@import "blok/skills";
+@import "blok/experience";
+@import "blok/education";
+@import "blok/add_eduation";
+@import "blok/project";
+@import "blok/footer";
+@import "blok/media";
